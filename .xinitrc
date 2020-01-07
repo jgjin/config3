@@ -25,7 +25,7 @@ emacs --daemon
 sxhkd &
 
 # Start window compositor
-compton -b --config $HOME/.config/compton.conf 
+picom -b --config $HOME/.config/picom.conf
 
 # Start window manager
 exec bspwm -c $HOME/.config/bspwm/bspwmrc
