@@ -1,12 +1,14 @@
 #!/usr/bin/sh
 
-# x86_energy_perf_policy --all balance-power
-
-# Start Redshift with manual location as Detroit
-redshift -l 42.33143:-83.04575 &> /dev/null &
-
 # Start clipmenu dameon
 clipmenud &
+
+# Start night theme
+xrdb $HOME/.Xresources
+feh --bg-fill $HOME/pics/wallpaper-night.jpg
+
+# Start window compositor
+picom -b --config $HOME/.config/picom.conf
 
 # Start xscreensaver daemon
 xscreensaver &
@@ -14,18 +16,17 @@ xscreensaver &
 # Lock on suspend
 xss-lock -- /usr/bin/xscreensaver-command -lock &
 
-# Start night theme
-xrdb $HOME/.Xresources-night
-feh --bg-fill $HOME/pics/wallpaper-night.jpg
+# Disable touchscreen (device-specific)
+xinput disable $(xinput list | rg "ELAN" | cut -d= -f2 | cut -d'[' -f1)
+
+# Start Redshift with geoclue2
+redshift -l geoclue2 &> /dev/null &
 
 # Start emacs
 emacs --daemon
 
 # Start keyboard shortcut manager
 sxhkd &
-
-# Start window compositor
-picom -b --config $HOME/.config/picom.conf
 
 # Start window manager
 exec bspwm -c $HOME/.config/bspwm/bspwmrc
