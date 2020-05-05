@@ -1,11 +1,11 @@
 ! font settings
-xscreensaver.Dialog.headingFont:        -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.Dialog.bodyFont:           -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.Dialog.labelFont:          -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.Dialog.unameFont:          -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.Dialog.buttonFont:         -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.Dialog.dateFont:           -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
-xscreensaver.passwd.passwdFont:         -monotype-noto sans-medium-r-normal--0-240-0-0-p-0-iso8859-1
+xscreensaver.Dialog.headingFont:        -*-roboto-bold-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-roboto-bold-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-roboto-bold-r-*-*-36-*-*-*-*-*-*-*
 
 ! general dialog box (affects main hostname, username, password text)
 xscreensaver.Dialog.foreground:         #268bd2
