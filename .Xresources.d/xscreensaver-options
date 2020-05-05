@@ -1,0 +1,32 @@
+! font settings
+xscreensaver.Dialog.bodyFont:    -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:  -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:    -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.headingFont: -*-roboto-bold-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:   -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:   -*-roboto-medium-r-*-*-36-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:  -*-roboto-bold-r-*-*-36-*-*-*-*-*-*-*
+
+! dialog box format settings
+xscreensaver.passwd.heading.label:     banana peel
+xscreensaver.passwd.body.label:        the banana is unpeeled
+xscreensaver.passwd.uname:             False 
+xscreensaver.passwd.thermometer.width: 2
+xscreensaver.passwd.login.label:       hot tip:
+xscreensaver.passwd.unlock.label:      to peel the banana, enter the password
+xscreensaver.dateFormat:
+
+! background/foreground settings
+xscreensaver.Dialog.background:        #262626
+xscreensaver.Dialog.foreground:        #268bd2
+xscreensaver.Dialog.text.background:   #262626
+xscreensaver.Dialog.text.foreground:   #d75fd7
+xscreensaver.Dialog.Button.background: #262626
+xscreensaver.Dialog.Button.foreground: #268bd2
+
+! ! border/shadow settings
+xscreensaver.Dialog.borderWidth:         0
+! xscreensaver.Dialog.internalBorderWidth: 2
+! xscreensaver.Dialog.shadowThickness:     2
+xscreensaver.Dialog.topShadowColor:      #262626
+xscreensaver.Dialog.bottomShadowColor:   #262626
