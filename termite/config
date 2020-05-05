@@ -1,5 +1,5 @@
 [options]
-font = Source Code Pro 12
+font = Source Code Pro 24
 
 # https://github.com/khamer/base16-termite/blob/master/themes/base16-spacemacs.config
 [colors]
