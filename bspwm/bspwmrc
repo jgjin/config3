@@ -7,18 +7,22 @@ bspc monitor DP-2 -d 0
 
 # Border
 bspc config border_width          0
-# bspc config normal_border_color   "#262626"
-# bspc config focused_border_color  "#d75fd7"
-# bspc config urgent_border_color   "#B58900"
-# bspc config presel_border_color   "#26E2FF"
+# bspc config normal_border_color   "#1f2022"
+# bspc config focused_border_color  "#a31db1"
+# bspc config urgent_border_color   "#4f97d7"
+# bspc config presel_border_color   "#2d9574"
 
 # Split
-bspc config window_gap            0 # default 12
+bspc config window_gap            0
 bspc config split_ratio           0.50
 
 # Monocle
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
+bspc config top_monocle_padding    12
+bspc config right_monocle_padding  12
+bspc config bottom_monocle_padding 12
+bspc config left_monocle_padding   12
 
 # Focus
 bspc config focus_follows_pointer false
