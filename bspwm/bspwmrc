@@ -30,8 +30,8 @@ bspc config history_aware_focus   true
 bspc config focus_by_distance     true
 
 # Rules
-bspc rule -a URxvt:dropdown sticky=on state=floating hidden=on
-urxvt +tr -name dropdown -e $HOME/bin/dropdown.sh &
+bspc rule -a Termite:dropdown sticky=on state=floating hidden=on
+termite --name dropdown -e $HOME/bin/dropdown.sh &
 
 # External rules command
 # bspc config external_rules_command $HOME/.config/bspwm/external-rules.sh
