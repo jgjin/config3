@@ -1,11 +1,9 @@
-export CC='clang'
-export CM_LAUNCHER='rofi'
-export EDITOR='vim'
+export CC="clang"
+export EDITOR="vim"
 export GDK_SCALE=2
 export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/.cask/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/go/bin"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+export VISUAL="vim"
 export XDG_CONFIG_HOME="$HOME/.config"
-export VISUAL='vim'
