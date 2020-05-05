@@ -17,7 +17,7 @@ compinit
 
 # zsh plugins
 auto-ls-custom_function () {
-    ls -AF
+    ls -AF --color=auto
 }
 source ~/.zsh_plugins.sh
 AUTO_LS_COMMANDS=(custom_function)
