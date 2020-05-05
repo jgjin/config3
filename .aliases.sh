@@ -1,3 +1,5 @@
+alias again="fuck"
+alias crap="fuck"
 alias disconnect="sudo netctl stop-all"
 alias emc="emacsclient_background"
 alias grep="rg"
