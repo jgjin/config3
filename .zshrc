@@ -15,7 +15,7 @@ zstyle :compinstall filename '/home/banana/.zshrc'
 autoload -Uz compinit
 compinit
 
-# exported variables?
+# source ~/.profile because it's not doing it by itself?
 source ~/.zprofile
 
 # zsh plugins
