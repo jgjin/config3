@@ -16,7 +16,11 @@ autoload -Uz compinit
 compinit
 
 # zsh plugins
+auto-ls-custom_function () {
+    ls -AF
+}
 source ~/.zsh_plugins.sh
+AUTO_LS_COMMANDS=(custom_function)
 
 # zsh aliases
 source ~/.aliases.sh
