@@ -15,6 +15,9 @@ zstyle :compinstall filename '/home/banana/.zshrc'
 autoload -Uz compinit
 compinit
 
+# exported variables?
+source ~/.zprofile
+
 # zsh plugins
 auto-ls-custom_function () {
     ls -AF --color=auto
