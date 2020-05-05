@@ -1,5 +1,10 @@
 [options]
+cursor_blink = off
+cursor_shape = ibeam
 font = Source Code Pro 12
+scrollback_lines = -1
+scrollbar = off
+
 
 # https://github.com/khamer/base16-termite/blob/master/themes/base16-spacemacs.config
 [colors]
