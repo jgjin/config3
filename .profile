@@ -6,6 +6,8 @@ export CM_LAUNCHER="rofi"
 export EDITOR="vim"
 # For Firefox
 export GDK_SCALE=2
+# For Bazel
+export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
 # For Rust binaries
 export PATH="$PATH:$HOME/.cargo/bin"
 # For user binaries
