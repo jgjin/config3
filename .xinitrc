@@ -3,6 +3,9 @@
 # Start clipmenu dameon
 clipmenud &
 
+# Notification daemon
+dunst &
+
 # Start night theme
 xrdb $HOME/.Xresources
 feh --bg-fill $HOME/pics/wallpaper-night.jpg
