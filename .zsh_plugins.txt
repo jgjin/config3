@@ -1,3 +1,4 @@
+Aloxaf/fzf-tab
 MichaelAquilina/zsh-auto-notify
 MikeDacre/careful_rm
 Tarrasch/zsh-bd
@@ -7,10 +8,13 @@ desyncr/auto-ls
 hcgraf/zsh-sudo
 hlissner/zsh-autopair
 laggardkernel/zsh-thefuck
-mafredri/zsh-async
-psprint/zsh-editing-workbench
-sindresorhus/pure
 skywind3000/z.lua
 zpm-zsh/ssh
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
+# pure theme requires async
+mafredri/zsh-async
+sindresorhus/pure
+# history substring search optionally requires syntax highlighting
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
