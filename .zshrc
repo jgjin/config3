@@ -14,6 +14,7 @@ zstyle :compinstall filename '/home/banana/.zshrc'
 
 autoload -Uz compinit
 compinit
+_comp_options+=(globdots)
 
 # source ~/.profile because it's not doing it by itself?
 source ~/.zprofile
@@ -30,6 +31,9 @@ source ~/.aliases.sh
 
 # zsh functions
 source ~/.zsh_functions.sh
+
+# zsh key bindings
+source ~/.zsh_keybindings.sh
 
 # zsh "pure" theme
 autoload -U promptinit; promptinit
