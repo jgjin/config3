@@ -1,15 +1,12 @@
 Aloxaf/fzf-tab
-MichaelAquilina/zsh-auto-notify
 MikeDacre/careful_rm
 Tarrasch/zsh-bd
 Tarrasch/zsh-command-not-found
-Tarrasch/zsh-functional
 desyncr/auto-ls
 hcgraf/zsh-sudo
 hlissner/zsh-autopair
 laggardkernel/zsh-thefuck
 skywind3000/z.lua
-zpm-zsh/ssh
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 # pure theme requires async
