@@ -36,27 +36,27 @@ super + l
         xscreensaver-command -lock
 
 # Night mode
-super + ctrl + alt + shift + t
+super + shift + t
       $HOME/bin/theme.sh
 
 # Chrome
-super + ctrl + alt + g
+super + shift + g
       google-chrome-stable
 
 # Firefox
-super + ctrl + alt + f
+super + shift + f
       firefox
 
 # Firefox private
-super + ctrl + alt + shift + f
+super + ctrl + f
       firefox --private-window
 
 # Firefox hidden private
-super + alt + shift + f
+super + ctrl + shift + f
       bspc rule -a "firefox" --one-shot hidden=on desktop=1; firefox --private-window
 
 # Emacsclient
-super + ctrl + alt + e
+super + shift + e
       emacsclient -c
 
 #
