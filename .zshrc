@@ -7,8 +7,8 @@ SAVEHIST=20736
 setopt appendhistory nomatch HIST_EXPIRE_DUPS_FIRST HIST_FIND_NO_DUPS HIST_IGNORE_ALL_DUPS HIST_IGNORE_DUPS
 unsetopt autocd beep extendedglob notify
 
-# vim-like key bindings
-bindkey -v
+# emacs-like key bindings, because Termite supports insert and select modes
+bindkey -e
 
 zstyle :compinstall filename '/home/banana/.zshrc'
 
@@ -24,6 +24,8 @@ auto-ls-custom_function () {
     ls -AF --color=auto
 }
 source ~/.zsh_plugins.sh
+AUTO_NOTIFY_THRESHOLD=12
+AUTO_NOTIFY_EXPIRE_TIME=3000
 AUTO_LS_COMMANDS=(custom_function)
 
 # zsh aliases
