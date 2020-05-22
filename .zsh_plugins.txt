@@ -1,4 +1,5 @@
 Aloxaf/fzf-tab
+MichaelAquilina/zsh-auto-notify
 MikeDacre/careful_rm
 Tarrasch/zsh-bd
 Tarrasch/zsh-command-not-found
