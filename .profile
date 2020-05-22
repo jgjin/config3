@@ -18,5 +18,5 @@ export PATH="$PATH:$HOME/go/bin"
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # For CLI editing
 export VISUAL="vim"
-# For ???
+# For standard config
 export XDG_CONFIG_HOME="$HOME/.config"
