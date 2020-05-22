@@ -1,5 +1,8 @@
 #!/usr/bin/sh
 
+# Switch out Caps Lock for Esc
+xcape -e "Alt_L=Escape"
+
 # Start clipmenu dameon
 clipmenud &
 
