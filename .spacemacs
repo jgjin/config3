@@ -184,49 +184,7 @@ before packages are loaded."
 
   (global-set-key (kbd "M-z") #'zzz-up-to-char)
   (global-set-key (kbd "C-M-z") #'zzz-to-char)
-
-  (defun maybe-add-newline-at-buf-start ()
-    (if (and (char-equal (char-after (point-min)) ?\n)
-             (char-equal (char-after (1+ (point-min))) ?\n))
-        ""
-      "\n"))
-
-  (defun maybe-add-newline-at-buf-end ()
-    (if (and (char-equal (char-before (point-max)) ?\n)
-             (char-equal (char-before (1- (point-max))) ?\n))
-        ""
-      "\n"))
-
-  ;; (global-set-key [f12]
-  ;; 		            '(lambda ()
-  ;; 		               (interactive)
-  ;; 		               (if (buffer-file-name)
-  ;; 		                   (let*
-  ;; 			                     ((fName (upcase (file-name-nondirectory (file-name-sans-extension buffer-file-name))))
-  ;; 			                      (ifDef (concat "#ifndef " fName "_H" "\n#define " fName "_H"
-  ;;                                            (maybe-add-newline-at-buf-start)))
-  ;; 			                      (begin (point-marker))
-  ;; 			                      )
-  ;; 			                   (progn
-  ;; 			                     (if (< (- (point-max) (point-min)) 5 )
-  ;; 			                         (progn
-  ;; 				                         (insert "\nclass " (capitalize fName) "{\npublic:\n\nprivate:\n\n};\n")
-  ;; 				                         (goto-char (point-min))
-  ;; 				                         (next-line-nomark 3)
-  ;; 				                         (setq begin (point-marker))
-  ;; 				                         )
-  ;; 			                       )
-
-  ;; 			                     (goto-char (point-min))
-  ;; 			                     (insert ifDef)
-  ;; 			                     (goto-char (point-max))
-  ;; 			                     (insert (maybe-add-newline-at-buf-end) "#endif" " //" fName "_H")
-  ;; 			                     (goto-char begin))
-  ;; 			                   )
-  ;; 		                 (message (concat "Buffer " (buffer-name) " must have a filename"))
-  ;; 		                 )
-  ;; 		               )
-  ;; 		            )
+  (global-set-key (kbd "M-/") #'yas-expand)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -247,9 +205,8 @@ This function is called at the very end of Spacemacs initialization."
  '(package-selected-packages
    '(ob-elixir flycheck-mix flycheck-credo alchemist elixir-mode tide typescript-mode import-js grizzl add-node-modules-path evil-smartparens seeing-is-believing rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocopfmt rubocop rspec-mode robe rbenv rake minitest helm-gtags ggtags enh-ruby-mode dap-mode bui counsel-gtags counsel swiper ivy chruby bundler inf-ruby org-brain org-ql drag-stuff csv-mode treemacs-persp terminal-here helm-ls-git flycheck-ycmd flycheck-elsa company-ycmd ycmd request-deferred bazel-mode helm-rtags google-c-style flycheck-rtags disaster cquery cpp-auto-include company-rtags rtags company-c-headers clang-format ccls zzz-to-char evil-snipe emojify emoji-cheat-sheet-plus company-emoji flycheck-elm elm-test-runner elm-mode reformatter gnu-elpa-keyring-update yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode anaconda-mode pythonic ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+ '(company-tooltip-common
+   ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection
+   ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
 )
