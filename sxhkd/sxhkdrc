@@ -13,7 +13,7 @@ super + Return
 
 # program launcher
 super + Tab
-	rofi -show combi -combi-modi "window,ssh" -modi combi
+	rofi -show combi -combi-modi "window,run,ssh" -modi combi
 
 # clipboard manager
 super + c
